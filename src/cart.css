@@ -1,0 +1,69 @@
+#u{
+
+    padding: 10px 10px;
+    width: 100%;
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+#l{
+    height: 150px;
+    width: 400px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cardimage{
+    height: 140px;
+    width: 140px;
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+}
+.cardtitle{
+    height: 40px;
+    width: 150px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cardprice{
+    height: 50px;
+    width: 50px;
+   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imm{
+
+    height: 140px;
+    width: 140px;
+
+}
+
+#r{
+    height: 30px;
+    width: 60px;
+    border: none;
+    background-color: lightcoral;
+    color:white;
+    border-radius: 2px;
+
+}
+

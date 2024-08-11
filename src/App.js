@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import Dis from './dis.js';
+import {BrowserRouter as Router, Route, Routes,Link} from 'react-router-dom';
+import Cart from './cart.js';
 import './App.css';
+import { useState } from 'react';
+function App(){
 
-function App() {
+  let [cart,ucart]=useState(0)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <Router>
+         <div className='head'>
+         
+            <Link to="/home"><button id="b">home </button></Link>
+             <Link to="/cart"> <button id="b">cart <span>{cart}</span></button></Link>
+          
+         </div>
+        
+        
+
+      <Routes>
+           <Route  path="/cart" element={<Cart ucart={ucart}/>}/>
+           <Route  path="/home" element={<Dis/>}/>
+
+           
+      </Routes>
+
+      </Router>
+     
     </div>
-  );
+  )
 }
 
 export default App;

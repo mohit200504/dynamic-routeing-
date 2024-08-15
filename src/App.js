@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes,Link} from 'react-router-dom';
 import Cart from './cart.js';
 import './App.css';
 import { useState } from 'react';
+import Item from './item.js';
 function App(){
 
   let [cart,ucart]=useState(0)
@@ -23,7 +24,7 @@ function App(){
       <Routes>
            <Route  path="/cart" element={<Cart ucart={ucart}/>}/>
            <Route  path="/home" element={<Dis/>}/>
-
+           <Route path="/id/:id" element={<Item/>}/>
            
       </Routes>
 
